@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab1", "lab1.csproj", "{FFE9D127-9216-4740-8961-C49A54860531}"
+	ProjectSection(ProjectDependencies) = postProject
+		{65F220D6-CA6F-4927-91AC-0FCBE67D096D} = {65F220D6-CA6F-4927-91AC-0FCBE67D096D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LR2.Services", "..\LR2.Services\LR2.Services.csproj", "{65F220D6-CA6F-4927-91AC-0FCBE67D096D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE9D127-9216-4740-8961-C49A54860531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE9D127-9216-4740-8961-C49A54860531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE9D127-9216-4740-8961-C49A54860531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE9D127-9216-4740-8961-C49A54860531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F220D6-CA6F-4927-91AC-0FCBE67D096D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F220D6-CA6F-4927-91AC-0FCBE67D096D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F220D6-CA6F-4927-91AC-0FCBE67D096D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F220D6-CA6F-4927-91AC-0FCBE67D096D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C5E6EBF-DCA5-4865-9784-205F3600B0BD}
+	EndGlobalSection
+EndGlobal
