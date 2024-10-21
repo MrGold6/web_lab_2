@@ -1,0 +1,39 @@
+﻿@model lab1.Models.ViewFilesModel
+@{
+    ViewData["Title"] = "ViewFiles";
+}
+
+
+<h2>Files</h2>
+<hr />
+<table class="table">
+    <tbody>
+       
+        @if (Model.Files.Count == 0)
+        {
+            <tr>
+                <td>
+                    No files found.
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var file in Model.Files)
+            {
+                <tr>
+                    <td>
+                        <a href="/Home/FileDetails?file_name=@file" target="_blank">@file</a>
+                    </td>
+                </tr>
+              
+            }
+        }
+        
+    </tbody>
+</table>
+
+<center>
+    <a asp-action="Upload" class="btn btn-success mt-3">Upload</a>
+</center>
+

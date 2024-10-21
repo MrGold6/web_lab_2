@@ -1,10 +1,5 @@
 using LR2.Services;
-using NuGet.Protocol.Core.Types;
 using Serilog;
-using System;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +7,6 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.File("Logs/myapp-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
-// Додаємо Serilog як логгер
 builder.Host.UseSerilog();
 
 
@@ -34,7 +28,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-// Middleware для логування всіх запитів
+
 app.Use(async (context, next) =>
 {
     var fullUrl = $"{context.Request.Scheme}://{context.Request.Host}{context.Request.Path}{context.Request.QueryString}";

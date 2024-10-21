@@ -16,4 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\LR2.Services\LR2.Services.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
 </Project>

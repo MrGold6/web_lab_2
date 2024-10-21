@@ -1,0 +1,16 @@
+﻿@model lab1.Models.FileDetailsModel
+@{
+    ViewData["Title"] = "FileDetails";
+}
+
+
+<h2 class="mx-3 row">@Model.FileName</h2>
+<hr />
+
+<div class="mb-3 mx-3 row">
+    @Model.FileContent
+</div>
+
+<center>
+    <a asp-action="ViewFiles" class="btn btn-success mt-3">Back to List</a>
+</center>
